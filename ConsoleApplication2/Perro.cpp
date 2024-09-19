@@ -23,6 +23,6 @@ void Perro::setRaza(std::string raza)
 std::string Perro::toString()
 {
     std::stringstream s;
-    s << "Nombre: " << getNombre() << std::endl << "Especie: " << getEspecie() << std::endl<<"Raza: "<<raza << std::endl << "Codigo: " << getCodigo() << std::endl << "Peso: " << getPeso() << std::endl;;
+    s <<"---INFORMACION DEL PERRO---" << std::endl << "Nombre: " << getNombre() << std::endl << "Especie: " << getEspecie() << std::endl << "Raza: " << raza << std::endl << "Codigo: " << getCodigo() << std::endl << "Peso: " << getPeso() << std::endl;;
     return s.str();
 }

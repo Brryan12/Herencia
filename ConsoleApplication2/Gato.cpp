@@ -22,6 +22,6 @@ std::string Gato::toString()
 {
     std::stringstream s;
     //s << "Nombre: " << getNombre() << std::endl << "Especie: " << getEspecie() << std::endl << "Edad: " << edad << std::endl << "Codigo: " << getCodigo() << std::endl << "Peso: " << getPeso() << std::endl;;
-    s << Animal::toString() << "Edad: " << edad << std::endl;
+    s << "---INFORMACION DEL GATO---"<<std::endl << Animal::toString() << "Edad: " << edad << std::endl;
     return s.str();
 }

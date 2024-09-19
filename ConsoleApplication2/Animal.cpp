@@ -52,6 +52,6 @@ void Animal::setPeso(double peso)
 std::string Animal::toString()
 {
     std::stringstream s;
-    s << "Nombre: " << nombre << std::endl << "Especie: " << especie << std::endl<<"Codigo: "<<codigo<<std::endl<<"Peso: "<<peso<< std::endl;
+    s << "Nombre: " << nombre << std::endl << "Especie: " << especie << std::endl<<"Codigo: "<<codigo<<std::endl<<"Peso: "<<peso<<"kg"<<std::endl;
     return s.str();
 }

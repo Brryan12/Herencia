@@ -55,3 +55,10 @@ std::string Animal::toString()
     s << "Nombre: " << nombre << std::endl << "Especie: " << especie << std::endl<<"Codigo: "<<codigo<<std::endl<<"Peso: "<<peso<<"kg"<<std::endl;
     return s.str();
 }
+
+void Animal::felizCumpleanos()
+{
+    std::cout << "---FELIZ CUMPLEAÑOS---" << std::endl;
+    std::cout << "----------------------" << std::endl;
+    std::cout << this->toString() << std::endl;
+}

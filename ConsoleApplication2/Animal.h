@@ -20,5 +20,6 @@ public:
 	void setCodigo(std::string codigo);
 	void setPeso(double peso);
 	virtual std::string toString();
+	void felizCumpleanos();
 };
 

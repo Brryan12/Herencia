@@ -128,12 +128,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Animal.cpp" />
-    <ClCompile Include="ConsoleApplication2.cpp" />
+    <ClCompile Include="Caballo.cpp" />
+    <ClCompile Include="main.cpp" />
     <ClCompile Include="Gato.cpp" />
     <ClCompile Include="Perro.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Animal.h" />
+    <ClInclude Include="Caballo.h" />
     <ClInclude Include="Gato.h" />
     <ClInclude Include="Perro.h" />
   </ItemGroup>

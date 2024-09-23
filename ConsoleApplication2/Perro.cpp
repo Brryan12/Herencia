@@ -26,3 +26,11 @@ std::string Perro::toString()
     s <<"---INFORMACION DEL PERRO---" << std::endl << "Nombre: " << getNombre() << std::endl << "Especie: " << getEspecie() << std::endl << "Raza: " << raza << std::endl << "Codigo: " << getCodigo() << std::endl << "Peso: " << getPeso()<<"kg" << std::endl;;
     return s.str();
 }
+
+void Perro::cambioAtributoDerivado()
+{
+    std::string raza;
+    std::cout << "Ingrese la nueva raza del perro: " << std::endl;
+    std::cin >> raza;
+    this->setRaza(raza);
+}

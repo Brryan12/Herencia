@@ -25,3 +25,11 @@ std::string Gato::toString()
     s << "---INFORMACION DEL GATO---"<<std::endl << Animal::toString() << "Edad: " << edad << std::endl;
     return s.str();
 }
+
+void Gato::cambioAtributoDerivado()
+{
+    int edad;
+    std::cout << "Ingrese la nueva edad del gato: " << std::endl;
+    std::cin >> edad;
+    this->setEdad(edad);
+}

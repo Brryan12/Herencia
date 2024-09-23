@@ -10,5 +10,6 @@ public:
 	std::string getRaza();
 	void setRaza(std::string raza);
 	std::string toString() override;
+	void cambioAtributoDerivado() override;
 };
 

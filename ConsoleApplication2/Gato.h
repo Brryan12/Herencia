@@ -11,5 +11,6 @@ public:
 	int getEdad();
 	void setEdad(int edad);
 	std::string toString() override;
+	void cambioAtributoDerivado() override;
 };
 

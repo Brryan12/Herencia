@@ -62,3 +62,8 @@ void Animal::felizCumpleanos()
     std::cout << "----------------------" << std::endl;
     std::cout << this->toString() << std::endl;
 }
+
+void Animal::cambioAtributoDerivado()
+{
+    
+}

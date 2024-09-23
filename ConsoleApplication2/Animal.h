@@ -21,5 +21,6 @@ public:
 	void setPeso(double peso);
 	virtual std::string toString();
 	void felizCumpleanos();
+	void virtual cambioAtributoDerivado();
 };
 

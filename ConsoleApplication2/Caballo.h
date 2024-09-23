@@ -10,5 +10,6 @@ public:
 	double getVelocidad();
 	void setVelocidad(double velocidad);
 	std::string toString() override;
+	void cambioAtributoDerivado() override;
 };
 

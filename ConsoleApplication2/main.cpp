@@ -15,7 +15,7 @@ int main()
     std::cout << c1->toString();
 
     std::endl(std::cout);
-    std::cout << "---CUMPLEAÑEROS---" << std::endl;
+    std::cout << "---CUMPLEANEROS---" << std::endl;
     std::endl(std::cout);
     c1->felizCumpleanos();
     g1->felizCumpleanos();
@@ -37,9 +37,48 @@ int main()
     for (int i = 0; i < cant; i++) {
         std::cout << vec[i]->toString() << std::endl;
     }
+    std::string tipo;
+    system("pause");
+    system("cls");
+    std::cout << "Imprimir solo los perros" << std::endl;
+    std::cout << "----------RTTI----------" << std::endl;
+    for (int i = 0; i < cant; i++) {
+        if (vec[i] != nullptr)
+            tipo = typeid(*vec[i]).name();
+        if (tipo == "class Perro") {
+            std::cout << vec[i]->toString() << std::endl;
+            }
+    }
+    system("pause");
+    system("cls");
+    c1->cambioAtributoDerivado();
+    std::cout << c1->toString();
+
     delete c1;
     delete g1;
     delete p1;
     return 0;
 }
 
+/*void DetectFishType(Fish* InputFish)
+{
+    Tuna* pIsTuna = dynamic_cast<Tuna*>(InputFish);
+
+    if (pIsTuna)
+    {
+        std::cout << "Detected Tuna. Making Tuna dinner:\n";
+        pIsTuna->BecomeDinner();   // calling Tuna::BecomeDinner
+    }
+
+    Carp* pIsCarp = dynamic_cast<Carp*>(InputFish);
+
+    if (pIsCarp)
+    {
+        std::cout << "Detected Carp. Making carp talk:\n";
+        pIsCarp->Talk();  // calling Carp::Talk
+    }
+
+    std::cout << "Verifying type using virtual Fish::Swim:\n";
+    InputFish->Swim(); // calling virtual function Swim
+}
+*/

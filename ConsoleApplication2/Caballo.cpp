@@ -24,3 +24,11 @@ std::string Caballo::toString()
     s << "---INFORMACION DEL CABALLO---" << std::endl << Animal::toString() << "Velocidad: " << velocidad <<"km/h" << std::endl;
     return s.str();
 }
+
+void Caballo::cambioAtributoDerivado()
+{
+    double velocidad;
+    std::cout << "Ingrese la nueva velocidad del caballo: " << std::endl;
+    std::cin >> velocidad;
+    this->setVelocidad(velocidad);
+}
